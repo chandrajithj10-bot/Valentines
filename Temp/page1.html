@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'App/css/page1.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Hey 👀</h1>
+    <p>Your sweet name please baby💋</p>
+
+    <input type="text" id="name" placeholder="Your name" required>
+    <button onclick="goNext()">Continue 💘</button>
+  </div>
+
+  <script src="{% static 'App/css/js/hearts.js' %}"></script>
+  <script>
+    function goNext() {
+      const name = document.getElementById("name").value;
+      if(name.trim() !== ""){
+        localStorage.setItem("valName", name);
+        window.location.href = "/ask/";
+      }
+    }
+  </script>
+</body>
+</html>

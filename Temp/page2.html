@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'App/css/page2.css' %}">
+</head>
+<body>
+  <h2 id="nameText"></h2>
+
+  <img src="{% static 'Qn.png' %}" class="question-img">
+  <p class="cry">This poocha is literally me when I c u baby...😽</p>
+  <div class="buttons">
+    <button class="yes">Yes 💖</button>
+    <button class="yes">Yes 💕</button>
+  </div>
+
+  <p class="cry">No aano thappane.Why would you reject me…enik veshamayi😭</p>
+
+  <script src="{% static 'App/css/js/move_yes.js' %}"></script>
+  <script>
+    document.getElementById("nameText").innerText =
+      "My chakkara,punnara " + localStorage.getItem("valName") + " babyyy😘...Feb 14 is cuming,will u be my valentine🥹??";
+  </script>
+</body>
+</html>

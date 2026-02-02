@@ -1,0 +1,14 @@
+body {
+  background: #0f0f0f;
+  color: #aaa;
+  text-align: center;
+  font-family: 'Poppins';
+  padding-top: 20vh;
+}
+
+video {
+  max-width: 300px;
+  border-radius: 15px;
+  opacity: 0.9;
+  filter: grayscale(10%); /* makes it a little darker */
+}
