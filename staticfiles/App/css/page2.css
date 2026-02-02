@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+  background: #ffe6eb;
+  font-family: 'Poppins';
+}
+
+.question-img {
+  width: 80%;
+  max-height: 50vh;
+  object-fit: contain;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.yes {
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 25px;
+  border: none;
+  background: hotpink;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.cry {
+  font-size: 12px;
+  opacity: 0.6;
+}

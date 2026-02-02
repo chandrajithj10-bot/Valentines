@@ -1,0 +1,38 @@
+body {
+  background: radial-gradient(circle, #ff758c, #ff7eb3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+}
+
+.loader-box {
+  text-align: center;
+  color: white;
+}
+
+.bar {
+  width: 300px;
+  height: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.3);
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: white;
+  animation: load 4s linear forwards;
+}
+
+@keyframes load {
+  to { width: 100%; }
+}
+
+.sub {
+  font-size: 12px;
+  opacity: 0.8;
+}
