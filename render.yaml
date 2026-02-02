@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: valentines
+    env: python
+    buildCommand: ./build.sh
+    startCommand: gunicorn pro.wsgi:application
